@@ -17,6 +17,7 @@ I am pursuing B.E. in __Computer Science__.I'm very open-minded and frank with p
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/django/django.png"></code>
 
+## My Social Handle | Say Hi!
 <a href="https://instagram.com/itsbhanupratap">
     <img align="left" alt="Bhanu Pratap | Instagram" width="40px" src="https://image.flaticon.com/icons/svg/2111/2111463.svg" />
   </a>
