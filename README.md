@@ -8,7 +8,7 @@ I am pursuing B.E. in __Computer Science__.I'm very open-minded and frank with p
 ## Github Stats:
 ![Bhanu's github stats](https://github-readme-stats.vercel.app/api/?username=ibhanu&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ibhanu)](https://github.com/anuraghazra/github-readme-stats&theme=dark)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ibhanu&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Tech Stack:
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
