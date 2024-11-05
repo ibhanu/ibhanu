@@ -18,17 +18,3 @@ I am pursuing B.E. in __Computer Science__.I'm very open-minded and frank with p
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/django/django.png"></code>
-
-## My Social Handle | Say Hi!
-<a href="https://instagram.com/itsbhanupratap">
-    <img align="left" alt="Bhanu Pratap | Instagram" width="40px" src="https://image.flaticon.com/icons/svg/2111/2111463.svg" />
-  </a>
-<a href="https://in.linkedin.com/in/itsbhanupratap">
-    <img align="left" alt="Bhanu pratap | Linkedin" width="40px" src="https://image.flaticon.com/icons/svg/174/174857.svg" />
-  </a>
-<a href="https://facebook.com/itsbhanupratap">
-    <img align="left" alt="Bhanu pratap | Facebook" width="40px" src="https://image.flaticon.com/icons/svg/174/174848.svg" />
-  </a>
-<a href="https://twitter.com/itsbhanupratap">
-    <img align="left" alt="Bhanu pratap | Twitter" width="40px" src="https://image.flaticon.com/icons/svg/174/174876.svg" />
-  </a>
