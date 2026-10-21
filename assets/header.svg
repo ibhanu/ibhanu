@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" width="100%" height="220">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.18" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="220" rx="14" fill="url(#bg)" />
+  <rect width="1000" height="220" rx="14" fill="url(#grid)" />
+
+  <!-- Subtle glowing orbs -->
+  <circle cx="140" cy="45" r="110" fill="#38BDF8" opacity="0.08" />
+  <circle cx="860" cy="175" r="130" fill="#818CF8" opacity="0.10" />
+
+  <!-- Animated / Layered Waves -->
+  <path d="M0,165 C250,215 420,120 700,170 C850,195 940,150 1000,165 L1000,220 L0,220 Z" fill="url(#wave1)" />
+  <path d="M0,185 C300,140 580,220 840,175 C920,162 970,180 1000,185 L1000,220 L0,220 Z" fill="url(#accent)" opacity="0.14" />
+
+  <!-- Top border accent line -->
+  <rect x="350" y="28" width="300" height="3" rx="1.5" fill="url(#accent)" opacity="0.85" />
+
+  <!-- Main Title -->
+  <text x="500" y="92" text-anchor="middle" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="0.5">
+    Bhanu Pratap
+  </text>
+
+  <!-- Subtitle -->
+  <text x="500" y="130" text-anchor="middle" fill="#38BDF8" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="16.5" font-weight="600" letter-spacing="0.8">
+    Senior Mobile &amp; Systems Engineer • Tech Lead • SDK Architect
+  </text>
+
+  <!-- Tech Pill Subtitle -->
+  <text x="500" y="162" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" letter-spacing="0.4">
+    Rust FFI (JNI / C-FFI / dart:ffi / WASM)  ·  Swift 6  ·  Kotlin  ·  Flutter  ·  Go Microservices
+  </text>
+</svg>

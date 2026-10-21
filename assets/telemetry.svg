@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 175" width="100%" height="175">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
+    </linearGradient>
+    <linearGradient id="barRust" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DEA584" />
+      <stop offset="100%" stop-color="#F97316" />
+    </linearGradient>
+    <linearGradient id="barDart" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#02569B" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="barGo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ADD8" />
+      <stop offset="100%" stop-color="#22D3EE" />
+    </linearGradient>
+    <linearGradient id="barSwift" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F05138" />
+      <stop offset="100%" stop-color="#FB923C" />
+    </linearGradient>
+    <linearGradient id="barKotlin" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7F52FF" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Card: Production Engineering Telemetry -->
+  <rect x="0" y="0" width="490" height="175" rx="12" fill="url(#cardBg)" stroke="#30363D" stroke-width="1.5" />
+  <text x="24" y="34" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">
+    ⚡ Production Engineering Telemetry
+  </text>
+
+  <!-- Stat Grid Left -->
+  <text x="24" y="68" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="500">Cumulative Production Users</text>
+  <text x="466" y="68" text-anchor="end" fill="#F0F6FC" font-family="'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700">900,000+</text>
+
+  <text x="24" y="96" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="500">Platform Transaction Volume</text>
+  <text x="466" y="96" text-anchor="end" fill="#10B981" font-family="'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700">$25M+ USD</text>
+
+  <text x="24" y="124" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="500">Sarvam SDK Monorepo Coverage</text>
+  <text x="466" y="124" text-anchor="end" fill="#38BDF8" font-family="'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700">97.8% (15.4K LOC)</text>
+
+  <text x="24" y="152" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="500">Production Crash-Free Sessions</text>
+  <text x="466" y="152" text-anchor="end" fill="#F59E0B" font-family="'SFMono-Regular', Consolas, monospace" font-size="13.5" font-weight="700">99.3% (60/120 FPS)</text>
+
+  <!-- Right Card: Primary Architecture Footprint -->
+  <rect x="510" y="0" width="490" height="175" rx="12" fill="url(#cardBg)" stroke="#30363D" stroke-width="1.5" />
+  <text x="534" y="34" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">
+    🧬 Core Language &amp; Runtime Footprint
+  </text>
+
+  <!-- Multi-segment Language Bar -->
+  <rect x="534" y="50" width="165" height="10" rx="4" fill="url(#barDart)" />
+  <rect x="701" y="50" width="95" height="10" fill="url(#barGo)" />
+  <rect x="798" y="50" width="75" height="10" fill="url(#barSwift)" />
+  <rect x="875" y="50" width="55" height="10" fill="url(#barKotlin)" />
+  <rect x="932" y="50" width="44" height="10" rx="4" fill="url(#barRust)" />
+
+  <!-- Legend Row 1 -->
+  <circle cx="542" cy="86" r="5" fill="#38BDF8" />
+  <text x="554" y="90" fill="#C9D1D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600">Flutter / Dart 3</text>
+  <text x="680" y="90" fill="#8B949E" font-family="'SFMono-Regular', Consolas, monospace" font-size="12">38%</text>
+
+  <circle cx="762" cy="86" r="5" fill="#00ADD8" />
+  <text x="774" y="90" fill="#C9D1D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600">Golang 1.25</text>
+  <text x="900" y="90" fill="#8B949E" font-family="'SFMono-Regular', Consolas, monospace" font-size="12">22%</text>
+
+  <!-- Legend Row 2 -->
+  <circle cx="542" cy="118" r="5" fill="#F05138" />
+  <text x="554" y="122" fill="#C9D1D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600">Swift 6 / iOS</text>
+  <text x="680" y="122" fill="#8B949E" font-family="'SFMono-Regular', Consolas, monospace" font-size="12">16%</text>
+
+  <circle cx="762" cy="118" r="5" fill="#A855F7" />
+  <text x="774" y="122" fill="#C9D1D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600">Kotlin / Android</text>
+  <text x="900" y="122" fill="#8B949E" font-family="'SFMono-Regular', Consolas, monospace" font-size="12">14%</text>
+
+  <!-- Legend Row 3 -->
+  <circle cx="542" cy="150" r="5" fill="#DEA584" />
+  <text x="554" y="154" fill="#C9D1D9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600">Rust FFI + TS / Python</text>
+  <text x="715" y="154" fill="#8B949E" font-family="'SFMono-Regular', Consolas, monospace" font-size="12">10%</text>
+</svg>

@@ -1,12 +1,8 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,14,23&height=185&section=header&text=Bhanu%20Pratap&fontSize=44&fontAlignY=35&desc=Senior%20Mobile%20%26%20Systems%20Engineer%20%E2%80%A2%20Tech%20Lead%20%E2%80%A2%20SDK%20Architect&descAlignY=58&descAlign=50&fontColor=ffffff" width="100%" alt="Bhanu Pratap Header" />
+  <img src="./assets/header.svg" width="100%" alt="Bhanu Pratap — Senior Mobile & Systems Engineer • Tech Lead • SDK Architect" />
 </div>
 
-<div align="center">
-  <a href="https://github.com/ibhanu">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=620&height=45&lines=Senior+Mobile+%26+Systems+Engineer+%7C+Tech+Lead;Cross-Platform+SDK+Architect+(Rust+FFI+%E2%80%A2+Swift+%E2%80%A2+Kotlin+%E2%80%A2+Dart);900K%2B+Production+Users+%26+%2425M%2B+Volume+Shipped;High-Throughput+Go+Microservices+%26+60FPS+Mobile+Engines" alt="Typing SVG" />
-  </a>
-</div>
+<br/>
 
 <p align="center">
   <a href="https://bhanupratap.me"><img src="https://img.shields.io/badge/Portfolio-bhanupratap.me-0EA5E9?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" /></a>&nbsp;
@@ -30,7 +26,7 @@
 I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-platform SDK architecture, zero-overhead native FFI bridges, high-frame-rate mobile applications, and low-latency Go backend microservices.
 
 - 🦀 **Multi-Platform SDK & FFI Architecture:** Architected **[Sarvam AI Mobile SDKs](https://github.com/ibhanu/sarvam-mobile)** across **iOS (Swift 6)**, **Android (Kotlin)**, **Flutter (Dart 3)**, and **React Native (TypeScript)** backed by a unified **<600 KB Rust Core Engine (`sarvam-rust-core`)** bridged via JNI, C-FFI, `dart:ffi`, and WebAssembly with **97.8% test coverage** across 9 published packages (`Maven Central`, `pub.dev`, `npm`, `SwiftPM`, `crates.io`).
-- 🚀 **Production Scale & Consumer Impact:** Scaled consumer & creator platforms to **900K+ cumulative users** and **\$25M+ in platform transactions** across [BigBang.Social](https://bigbang.social) and [Under25](https://under25.club).
+- 🚀 **Production Scale & Consumer Impact:** Scaled consumer & creator platforms to **900K+ cumulative users** and **$25M+ in platform transactions** across [BigBang.Social](https://bigbang.social) and [Under25](https://under25.club).
 - ⚡ **Performance & Reliability Engineering:** Slashed production crash rates by **65% (to 99.3% crash-free)**, engineered 16 kHz PCM DSP audio resampling pipelines, eliminated UI raster jank for locked **60/120 FPS** animations, and built sharded token-bucket rate limiters in Go.
 - 🛠️ **DevOps & Engineering Leadership:** Built reusable design systems (30+ core components), instituted strict TDD & CI/CD release gates (`Release Please`, `Fastlane`, `GitHub Actions`, multi-stage `Docker` & `Kubernetes`), and cut release turnaround times by **75%**.
 
@@ -49,11 +45,11 @@ I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-
         Indic-first Speech (STT/TTS), Translation & Dubbing SDKs for <b>Swift 6, Kotlin, Flutter, and React Native</b> powered by a shared <code>&lt;600 KB</code> <b>Rust Core Engine</b> (JNI, C-FFI, <code>dart:ffi</code>, WASM) for 16 kHz PCM DSP resampling, single-flight token coalescing, and SSE/WS streaming.
       </p>
       <p align="left">
-        <img src="https://img.shields.io/badge/Rust_FFI-DEA584?style=flat-square&logo=rust&logoColor=black" />
-        <img src="https://img.shields.io/badge/Swift_6-F05138?style=flat-square&logo=swift&logoColor=white" />
-        <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" />
-        <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
-        <img src="https://img.shields.io/badge/Coverage-97.8%25-10B981?style=flat-square" />
+        <img src="https://img.shields.io/badge/Rust_FFI-DEA584?style=flat-square&logo=rust&logoColor=black" alt="Rust FFI" />
+        <img src="https://img.shields.io/badge/Swift_6-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift 6" />
+        <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
+        <img src="https://img.shields.io/badge/Coverage-97.8%25-10B981?style=flat-square" alt="Coverage 97.8%" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -63,10 +59,10 @@ I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-
         Enterprise Go 1.24 microservice blueprint implementing Uncle Bob's Clean Architecture & DDD. Features RBAC JWT auth, PostgreSQL with Prisma Client Go, sharded rate limiting, OpenAPI/Swagger generation, race-detector test suites, and Kubernetes/Docker manifests.
       </p>
       <p align="left">
-        <img src="https://img.shields.io/badge/Go_1.24-00ADD8?style=flat-square&logo=go&logoColor=white" />
-        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
-        <img src="https://img.shields.io/badge/Docker_%26_K8s-2496ED?style=flat-square&logo=docker&logoColor=white" />
+        <img src="https://img.shields.io/badge/Go_1.24-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go 1.24" />
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
+        <img src="https://img.shields.io/badge/Docker_%26_K8s-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker & K8s" />
       </p>
     </td>
   </tr>
@@ -78,10 +74,10 @@ I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-
         Tactile Flutter application featuring real-time hardware accelerometer parallax backgrounds (<code>sensors_plus</code>), a 4-stage evolving mascot streak engine, multi-category Mix Mode, custom theme studio, and native iOS/Android home screen widgets.
       </p>
       <p align="left">
-        <img src="https://img.shields.io/badge/Flutter_3.7-02569B?style=flat-square&logo=flutter&logoColor=white" />
-        <img src="https://img.shields.io/badge/Sensors_%26_Parallax-F59E0B?style=flat-square" />
-        <img src="https://img.shields.io/badge/Hive_NoSQL-FFCA28?style=flat-square" />
-        <img src="https://img.shields.io/badge/iOS_Widgets-000000?style=flat-square&logo=apple&logoColor=white" />
+        <img src="https://img.shields.io/badge/Flutter_3.7-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter 3.7" />
+        <img src="https://img.shields.io/badge/Sensors_%26_Parallax-F59E0B?style=flat-square" alt="Sensors & Parallax" />
+        <img src="https://img.shields.io/badge/Hive_NoSQL-FFCA28?style=flat-square" alt="Hive NoSQL" />
+        <img src="https://img.shields.io/badge/iOS_Widgets-000000?style=flat-square&logo=apple&logoColor=white" alt="iOS Widgets" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -91,10 +87,10 @@ I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-
         Feature-first Clean Architecture dating app built with Flutter & Supabase. Engineers 60 FPS card-swipe physics, passwordless OTP & Apple/Google social auth, real-time Postgres matching & chat streams, profile completion rings, and tiered freemium paywalls.
       </p>
       <p align="left">
-        <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
-        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=black" />
-        <img src="https://img.shields.io/badge/PostgreSQL_Realtime-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-        <img src="https://img.shields.io/badge/Clean_Arch-8B5CF6?style=flat-square" />
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=black" alt="Supabase" />
+        <img src="https://img.shields.io/badge/PostgreSQL_Realtime-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL Realtime" />
+        <img src="https://img.shields.io/badge/Clean_Arch-8B5CF6?style=flat-square" alt="Clean Arch" />
       </p>
     </td>
   </tr>
@@ -106,10 +102,10 @@ I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-
         End-to-end computer vision pipeline that extracts puzzle grids via Hough Space transforms, classifies digits with a Deep CNN, solves boards via algorithmic backtracking, and projects the solution onto live video in real-time AR.
       </p>
       <p align="left">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
-        <img src="https://img.shields.io/badge/TensorFlow_CNN-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-        <img src="https://img.shields.io/badge/Augmented_Reality-10B981?style=flat-square" />
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" />
+        <img src="https://img.shields.io/badge/TensorFlow_CNN-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow CNN" />
+        <img src="https://img.shields.io/badge/Augmented_Reality-10B981?style=flat-square" alt="Augmented Reality" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -119,10 +115,10 @@ I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-
         4-layer Convolutional Neural Network trained on FER-2013 across 7 emotional states, paired with OpenCV Haar cascade face detection for low-latency live webcam inference.
       </p>
       <p align="left">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Keras_%2F_TF2-D00000?style=flat-square&logo=keras&logoColor=white" />
-        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
-        <img src="https://img.shields.io/badge/Deep_Learning-38BDF8?style=flat-square" />
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Keras_%2F_TF2-D00000?style=flat-square&logo=keras&logoColor=white" alt="Keras / TF2" />
+        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" />
+        <img src="https://img.shields.io/badge/Deep_Learning-38BDF8?style=flat-square" alt="Deep Learning" />
       </p>
     </td>
   </tr>
@@ -216,18 +212,10 @@ flowchart LR
 
 ---
 
-### 📊 GitHub Activity & Telemetry
+### 📊 Production & Language Telemetry
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ibhanu&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8" height="165" alt="Bhanu's GitHub Stats" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ibhanu&theme=tokyonight&hide_border=true&layout=compact&bg_color=0D1117&title_color=38BDF8&text_color=94A3B8" height="165" alt="Top Languages" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=ibhanu&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8" height="165" alt="Streak Stats" />
+  <img src="./assets/telemetry.svg" width="100%" alt="Production Engineering Telemetry & Core Language Footprint" />
 </div>
 
 ---
@@ -240,5 +228,5 @@ flowchart LR
 - 📬 **Email:** [pratap.bhanu3434@gmail.com](mailto:pratap.bhanu3434@gmail.com)
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,14,23&height=100&section=footer" width="100%" alt="Footer" />
+  <img src="./assets/footer.svg" width="100%" alt="Footer" />
 </div>
