@@ -1,51 +1,151 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" width="100%" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 310" width="100%" height="310">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D16" />
-      <stop offset="50%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#1E1B4B" />
+      <stop offset="0%" stop-color="#060911" />
+      <stop offset="50%" stop-color="#0B1120" />
+      <stop offset="100%" stop-color="#13112C" />
+    </linearGradient>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#090D16" stop-opacity="0.96" />
     </linearGradient>
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38BDF8" />
       <stop offset="50%" stop-color="#818CF8" />
       <stop offset="100%" stop-color="#C084FC" />
     </linearGradient>
-    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.18" />
-      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.18" />
+    <linearGradient id="rustGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#FACC15" />
     </linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.35" />
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.55" />
     </pattern>
   </defs>
 
-  <rect width="1000" height="220" rx="14" fill="url(#bg)" />
-  <rect width="1000" height="220" rx="14" fill="url(#grid)" />
+  <style>
+    .title { font: 800 42px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #F8FAFC; letter-spacing: -0.5px; }
+    .role { font: 600 15.5px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; fill: #38BDF8; letter-spacing: 0.4px; }
+    .desc { font: 400 14px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #94A3B8; }
+    .pill-text { font: 600 11.5px 'SFMono-Regular', Consolas, monospace; }
+    .mono { font: 500 12px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .mono-bold { font: 700 12px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .pulse { animation: pulseGlow 3s ease-in-out infinite; }
+    .cursor { animation: blink 1.1s step-end infinite; }
+    .scanline { animation: scan 6s linear infinite; }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 0.95; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes scan {
+      0% { transform: translateY(0px); opacity: 0; }
+      15% { opacity: 0.35; }
+      85% { opacity: 0.35; }
+      100% { transform: translateY(230px); opacity: 0; }
+    }
+  </style>
 
-  <!-- Subtle glowing orbs -->
-  <circle cx="140" cy="45" r="110" fill="#38BDF8" opacity="0.08" />
-  <circle cx="860" cy="175" r="130" fill="#818CF8" opacity="0.10" />
+  <!-- Canvas Background -->
+  <rect width="1000" height="310" rx="16" fill="url(#bg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="1000" height="310" rx="16" fill="url(#grid)" />
 
-  <!-- Animated / Layered Waves -->
-  <path d="M0,165 C250,215 420,120 700,170 C850,195 940,150 1000,165 L1000,220 L0,220 Z" fill="url(#wave1)" />
-  <path d="M0,185 C300,140 580,220 840,175 C920,162 970,180 1000,185 L1000,220 L0,220 Z" fill="url(#accent)" opacity="0.14" />
+  <!-- Ambient Glows -->
+  <circle cx="180" cy="80" r="140" fill="#38BDF8" opacity="0.07" />
+  <circle cx="780" cy="160" r="170" fill="#818CF8" opacity="0.08" />
+  <circle cx="520" cy="280" r="120" fill="#F97316" opacity="0.05" />
 
-  <!-- Top border accent line -->
-  <rect x="350" y="28" width="300" height="3" rx="1.5" fill="url(#accent)" opacity="0.85" />
+  <!-- Top Accent Line -->
+  <rect x="40" y="0" width="920" height="3" rx="1.5" fill="url(#accent)" />
 
-  <!-- Main Title -->
-  <text x="500" y="92" text-anchor="middle" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="0.5">
-    Bhanu Pratap
-  </text>
+  <!-- ================= LEFT COLUMN: IDENTITY & MISSION ================= -->
+  <!-- Live Status Pill -->
+  <rect x="44" y="34" width="295" height="26" rx="13" fill="#0F172A" stroke="#1E293B" stroke-width="1.2" />
+  <circle cx="60" cy="47" r="4.5" fill="#10B981" class="pulse" />
+  <text x="74" y="51" class="pill-text" fill="#10B981">SYSTEMS ONLINE</text>
+  <text x="182" y="51" class="pill-text" fill="#64748B">•  BENGALURU, IN</text>
 
-  <!-- Subtitle -->
-  <text x="500" y="130" text-anchor="middle" fill="#38BDF8" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="16.5" font-weight="600" letter-spacing="0.8">
-    Senior Mobile &amp; Systems Engineer • Tech Lead • SDK Architect
-  </text>
+  <!-- Name & Title -->
+  <text x="44" y="108" class="title">Bhanu Pratap</text>
+  <text x="44" y="138" class="role">Senior Mobile &amp; Systems Engineer • Tech Lead</text>
 
-  <!-- Tech Pill Subtitle -->
-  <text x="500" y="162" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" letter-spacing="0.4">
-    Rust FFI (JNI / C-FFI / dart:ffi / WASM)  ·  Swift 6  ·  Kotlin  ·  Flutter  ·  Go Microservices
-  </text>
+  <!-- Bio / Tagline -->
+  <text x="44" y="172" class="desc">Architecting zero-overhead Rust FFI engines, 60/120 FPS</text>
+  <text x="44" y="194" class="desc">native &amp; Flutter apps, and high-throughput Go microservices</text>
+  <text x="44" y="216" class="desc">powering 900K+ production users &amp; $25M+ transaction volume.</text>
+
+  <!-- Metric Badges Row -->
+  <!-- Badge 1 -->
+  <rect x="44" y="242" width="128" height="38" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1.2" />
+  <text x="58" y="259" class="mono-bold" fill="#38BDF8">900K+ Users</text>
+  <text x="58" y="273" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">Production Scale</text>
+
+  <!-- Badge 2 -->
+  <rect x="182" y="242" width="132" height="38" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1.2" />
+  <text x="196" y="259" class="mono-bold" fill="#10B981">$25M+ Volume</text>
+  <text x="196" y="273" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">Creator &amp; Fintech</text>
+
+  <!-- Badge 3 -->
+  <rect x="324" y="242" width="136" height="38" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1.2" />
+  <text x="338" y="259" class="mono-bold" fill="#F97316">97.8% Coverage</text>
+  <text x="338" y="273" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">9 Published SDKs</text>
+
+  <!-- ================= RIGHT COLUMN: LIVE TERMINAL HUD ================= -->
+  <rect x="492" y="28" width="468" height="254" rx="12" fill="url(#termBg)" stroke="#334155" stroke-width="1.2" />
+
+  <!-- Terminal Header Bar -->
+  <path d="M 492 40 Q 492 28 504 28 L 948 28 Q 960 28 960 40 L 960 58 L 492 58 Z" fill="#1E293B" opacity="0.7" />
+  <circle cx="512" cy="43" r="5.5" fill="#EF4444" />
+  <circle cx="530" cy="43" r="5.5" fill="#F59E0B" />
+  <circle cx="548" cy="43" r="5.5" fill="#10B981" />
+  <text x="726" y="47" text-anchor="middle" class="mono" fill="#94A3B8" font-size="11.5">bhanu@darwin-arm64: ~/systems-telemetry</text>
+
+  <!-- Subtle Scanline inside Terminal -->
+  <rect x="494" y="58" width="464" height="1.5" fill="url(#accent)" class="scanline" />
+
+  <!-- Terminal Line 1: Command -->
+  <text x="512" y="84" class="mono-bold" fill="#10B981">➜</text>
+  <text x="528" y="84" class="mono-bold" fill="#38BDF8">~</text>
+  <text x="542" y="84" class="mono" fill="#F8FAFC">cargo check --workspace &amp;&amp; sarvam-bench --targets all</text>
+
+  <!-- Terminal Line 2: Rust Core -->
+  <text x="512" y="110" class="mono" fill="#F97316">[rust-core]</text>
+  <text x="602" y="110" class="mono" fill="#CBD5E1">sarvam_rust_core.a/.wasm</text>
+  <text x="795" y="110" class="mono-bold" fill="#10B981">584 KB  ✓ ZERO-DEP</text>
+
+  <!-- Terminal Line 3: FFI Bridges -->
+  <text x="512" y="132" class="mono" fill="#818CF8">[ffi-abi]</text>
+  <text x="602" y="132" class="mono" fill="#CBD5E1">JNI • Clang C-FFI • dart:ffi • WASM</text>
+  <text x="862" y="132" class="mono-bold" fill="#38BDF8">0.04ms ✓</text>
+
+  <!-- Terminal Line 4: Audio DSP -->
+  <text x="512" y="154" class="mono" fill="#38BDF8">[audio-dsp]</text>
+  <text x="602" y="154" class="mono" fill="#CBD5E1">16kHz Linear-16 PCM Resampler</text>
+  <text x="832" y="154" class="mono-bold" fill="#10B981">REALTIME ✓</text>
+
+  <!-- Terminal Line 5: Go Backend -->
+  <text x="512" y="176" class="mono" fill="#22D3EE">[go-engine]</text>
+  <text x="602" y="176" class="mono" fill="#CBD5E1">Sharded Token-Bucket Limiter</text>
+  <text x="825" y="176" class="mono-bold" fill="#10B981">0 LOCK-WAIT ✓</text>
+
+  <!-- Terminal Line 6: Mobile Frame Timing -->
+  <text x="512" y="198" class="mono" fill="#C084FC">[ui-raster]</text>
+  <text x="602" y="198" class="mono" fill="#CBD5E1">Flutter / Swift / Kotlin Frame P99</text>
+  <text x="845" y="198" class="mono-bold" fill="#FACC15">8.1ms (120Hz)</text>
+
+  <!-- Divider -->
+  <line x1="512" y1="216" x2="940" y2="216" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Terminal Line 7: Test Suite Summary -->
+  <text x="512" y="238" class="mono-bold" fill="#10B981">PASS</text>
+  <text x="550" y="238" class="mono" fill="#94A3B8">15,420 / 15,760 LOC verified (97.8% LCOV) • 99.3% Crash-Free</text>
+
+  <!-- Terminal Line 8: Active Prompt -->
+  <text x="512" y="264" class="mono-bold" fill="#10B981">➜</text>
+  <text x="528" y="264" class="mono-bold" fill="#38BDF8">~</text>
+  <text x="542" y="264" class="mono" fill="#94A3B8">ship --production --zero-jank</text>
+  <rect x="748" y="252" width="8" height="15" fill="#38BDF8" class="cursor" />
 </svg>

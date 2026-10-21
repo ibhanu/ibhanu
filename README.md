@@ -4,12 +4,12 @@
 
 <br/>
 
-<p align="center">
+<div align="center">
   <a href="https://bhanupratap.me"><img src="https://img.shields.io/badge/Portfolio-bhanupratap.me-0EA5E9?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" /></a>&nbsp;
   <a href="https://linkedin.com/in/itsbhanupratap"><img src="https://img.shields.io/badge/LinkedIn-itsbhanupratap-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
   <a href="https://x.com/itsbhanupratap"><img src="https://img.shields.io/badge/X%20%2F%20Twitter-@itsbhanupratap-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" /></a>&nbsp;
   <a href="mailto:pratap.bhanu3434@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-</p>
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Systems_%26_FFI-Rust_%E2%80%A2_JNI_%E2%80%A2_C--FFI_%E2%80%A2_dart:ffi_%E2%80%A2_WASM-DEA584?style=flat-square&logo=rust&logoColor=white" alt="Systems & FFI" />
@@ -21,20 +21,29 @@
 
 ---
 
-### 👨‍💻 Executive Summary
+### 👨‍💻 Engineering Identity & What I Build
 
-I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-platform SDK architecture, zero-overhead native FFI bridges, high-frame-rate mobile applications, and low-latency Go backend microservices.
+I am a **Senior Mobile & Systems Engineer and Tech Lead** bridging low-level systems programming with buttery-smooth client applications. I specialize in building cross-platform SDK architectures, zero-overhead FFI bridges, and low-latency microservices.
 
-- 🦀 **Multi-Platform SDK & FFI Architecture:** Architected **[Sarvam AI Mobile SDKs](https://github.com/ibhanu/sarvam-mobile)** across **iOS (Swift 6)**, **Android (Kotlin)**, **Flutter (Dart 3)**, and **React Native (TypeScript)** backed by a unified **<600 KB Rust Core Engine (`sarvam-rust-core`)** bridged via JNI, C-FFI, `dart:ffi`, and WebAssembly with **97.8% test coverage** across 9 published packages (`Maven Central`, `pub.dev`, `npm`, `SwiftPM`, `crates.io`).
-- 🚀 **Production Scale & Consumer Impact:** Scaled consumer & creator platforms to **900K+ cumulative users** and **$25M+ in platform transactions** across [BigBang.Social](https://bigbang.social) and [Under25](https://under25.club).
-- ⚡ **Performance & Reliability Engineering:** Slashed production crash rates by **65% (to 99.3% crash-free)**, engineered 16 kHz PCM DSP audio resampling pipelines, eliminated UI raster jank for locked **60/120 FPS** animations, and built sharded token-bucket rate limiters in Go.
-- 🛠️ **DevOps & Engineering Leadership:** Built reusable design systems (30+ core components), instituted strict TDD & CI/CD release gates (`Release Please`, `Fastlane`, `GitHub Actions`, multi-stage `Docker` & `Kubernetes`), and cut release turnaround times by **75%**.
+```
+┌─────────────────────────────────┐   ┌─────────────────────────────────┐
+│     🦀 Rust Systems & FFI       │   │     📱 60/120 FPS Mobile Craft  │
+│  sarvam-rust-core (<600 KB)     │   │  Flutter, iOS (Swift) & Android │
+│  JNI, C-FFI, dart:ffi, WASM     │   │  Hardware Accelerometer Sensors │
+│  16kHz PCM Audio DSP Resampler  │   │  Gesture Physics & iOS Widgets  │
+└─────────────────────────────────┘   └─────────────────────────────────┘
+┌─────────────────────────────────┐   ┌─────────────────────────────────┐
+│    ⚡ Distributed Backends (Go) │   │     🚀 Engineering Leadership   │
+│  Zero-contention Token Limiters │   │  97.8% Monorepo Test Coverage   │
+│  PostgreSQL, Prisma, OCI Infra  │   │  900K+ Users, $25M+ Volume      │
+│  SSE, WebSockets & gRPC         │   │  Release Please & CI/CD Gates   │
+└─────────────────────────────────┘   └─────────────────────────────────┘
+```
 
 ---
 
 ### 📌 Pinned Showcase
 
-<!-- Ensure your GitHub Web UI pins match these 6 flagship repositories -->
 <div align="center">
 <table>
   <tr>
@@ -127,9 +136,9 @@ I am a **Senior Mobile & Systems Engineer and Tech Lead** specializing in cross-
 
 ---
 
-### 🏛️ Systems Architecture & Flagship Engineering
+### 🏛️ Deep-Dive: Cross-Platform Native Architecture
 
-#### 1. Cross-Platform Native SDK & Rust FFI Engine ([`sarvam-mobile`](https://github.com/ibhanu/sarvam-mobile))
+How `sarvam-mobile` bridges a unified Rust core with four platform runtimes:
 
 ```mermaid
 flowchart LR
@@ -171,21 +180,41 @@ flowchart LR
     RC --> API
 ```
 
-- **Published Ecosystem:** Distributes **9 production packages** across Maven Central (`io.github.ibhanu:sarvam-core`, `sarvam-android-audio`), SwiftPM (`Sarvam`, `SarvamAudio`), pub.dev (`sarvam`, `sarvam_flutter_audio`), npm (`@sarvam-mobile/core`, `@sarvam-mobile/react-native`), and crates.io (`sarvam-rust-core`).
-- **Host-Delegated Transport:** Delegates socket I/O to OS networking stacks (`OkHttp`, `URLSession`, `fetch`, `package:http`) for 100% compatibility with enterprise VPNs, proxies, cellular handoffs, and SSL pinning while executing stateful protocol & DSP math in Rust.
-- **Verification Rigor:** Enforces **97.8% combined line coverage** (15,420 / 15,760 lines tested across JaCoCo, LLVM LCOV, Dart LCOV, and Node LCOV) plus cross-language conformance suites and a reference Node.js BFF proxy.
-
 ---
 
-#### 2. Full-Stack Product Systems & Production Ecosystems
+### 🚀 Production Ecosystems & Systems Experience
 
-| System / Platform | Domain | Architectural Highlights | Tech Stack |
-| :--- | :--- | :--- | :--- |
-| **Govam Ecosystem**<br/>*(`govam-server` & `govam-mobile`)* | Holistic Wellness & Breathwork Platform | **Backend:** Go 1.25 + Gin microservice on OCI with PostgreSQL (GORM), sub-ms in-memory caching, sharded token-bucket rate limiting (zero lock contention), and Uber Zap logging.<br/>**Mobile:** Flutter 3.7 app with interactive breathwork cadences, rich-text journaling (`flutter_quill`), archetype diagnostics, and offline Hive sync. | `Go 1.25` `Flutter` `PostgreSQL` `OCI` `Docker` `Nginx` |
-| **GoBanana Monorepo**<br/>*(`mobile`, `server`, `web`)* | Real-Time Social & Geo-Discovery | **3-tier monorepo:** Flutter geo-social mobile client (Google Maps, Geolocator, audio/chat), Clean-Architecture Go REST/JWT backend with SQL migrations, and a Next.js 16 + React 19 interactive launch platform. | `Flutter` `Go` `Next.js 16` `React 19` `Tailwind` |
-| **Nyaya Setu & Legal Connect**<br/>*(`nyaya-setu`, `lc-web`, `legal-rights-now`)* | LegalTech & Judicial Access Suite | Bilingual mobile judicial assistant in Flutter (`nyaya-setu`), high-speed lawyer discovery & booking platform built with **Astro 5 + Svelte 5 + Tailwind v4** (`lc-web`), and interactive legal-aid workflows in React 18 + shadcn/ui. | `Flutter` `Astro 5` `Svelte 5` `React 18` `TypeScript` |
-| **Tinify AI Studio & Me-U**<br/>*(`ai-studio`, `me-u`)* | Generative Media & Hospitality SaaS | Streaming WebSocket AI media studio with direct AWS S3 pipeline & Firebase Auth (`ai-studio`), plus a multi-tenant QR table-ordering & digital menu backend in Go + PostgreSQL (`me-u`). | `React` `TypeScript` `AWS S3` `Go` `WebSockets` |
-| **Qoohoo Voice Engine**<br/>*(`qoohoo_voice`)* | Real-Time Audio Messaging | WhatsApp-grade voice note recorder & player in Flutter featuring slide-to-cancel/lock gesture state machines, waveform feedback, haptic triggers, and low-latency AAC encoding. | `Flutter` `Dart` `Stacked` `Audio DSP` |
+<details open>
+<summary><b>1. Holistic Wellness & High-Throughput Microservice (Govam)</b></summary>
+<br/>
+
+- **Go 1.25 Backend (`govam-server`):** High-throughput microservice deployed on Oracle Cloud Infrastructure (OCI). Features sub-millisecond in-memory caching, sharded token-bucket rate limiters eliminating CPU lock contention under spike traffic, Uber-zap zero-allocation structured logging, and hardened Docker deployments behind Nginx.
+- **Flutter 3.7 Mobile Client (`govam-mobile`):** Implements interactive breathwork visualizer with haptic feedback, rich-text mindful journaling (`flutter_quill`), diagnostic assessments, and offline Hive NoSQL sync.
+</details>
+
+<details>
+<summary><b>2. Real-Time Geo-Social Discovery (GoBanana Monorepo)</b></summary>
+<br/>
+
+- **Full-Stack Monorepo:** Flutter mobile client with real-time location mapping (`geolocator`, Google Maps) and in-app chat, Clean Architecture Go REST/JWT backend with SQL migrations, and Next.js 16 + React 19 interactive waitlist portal.
+</details>
+
+<details>
+<summary><b>3. LegalTech & Judicial Access Suite (Nyaya Setu & Legal Connect)</b></summary>
+<br/>
+
+- **Nyaya Setu (`nyaya-setu`):** Bilingual mobile legal aid assistant in Flutter with resilient Dio API clients and responsive UI scaling.
+- **Legal Connect Web (`lc-web`):** Ultra-fast lawyer directory and booking platform built with **Astro 5 + Svelte 5 + Tailwind v4**, deployed on Vercel.
+- **Legal Rights Now (`legal-rights-now`):** Interactive legal rights navigator in React 18 + TypeScript + shadcn/ui.
+</details>
+
+<details>
+<summary><b>4. AI Media Pipeline & WhatsApp-Grade Voice Messaging</b></summary>
+<br/>
+
+- **Tinify AI Studio (`ai-studio`):** React + Vite + TypeScript web client with direct-to-S3 asset streaming and WebSocket duplex pipelines for generative AI workflows.
+- **Qoohoo Voice Engine (`qoohoo_voice`):** WhatsApp-grade audio note recorder & player in Flutter featuring slide-to-cancel/lock state machines, live waveform canvas rendering, and low-latency AAC encoding.
+</details>
 
 ---
 
